@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: TTLakes-Bold;
+    src: url(../fonts/TTlakes/TTLakes-Bold.woff);
+}
+
+@font-face {
+    font-family: TT Lakes-Medium;
+    src: url(../fonts/TTlakes/TTLakesCondensed-Medium.woff);
+}
+
+.pop-up {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 16px 0px 52px 0px #0E185033;
+}
+
+.pop-up__header {
+    display: flex;
+    margin: 18.73px 24px 57px 24px;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 78.73px;
+    margin-left: 16.73px;
+}
+
+/* ТУрбо костыль ))) просто что бы не повторять прошлый метод */
+.pop-up__nav {
+    height: 416px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav__conteiner-link {
+    display: flex;
+    align-items: center;
+}
+
+.conteiner-link__link {
+    font-family: TT Lakes-Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.conteiner-link__decor-line {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    order: -1;
+    margin-right: 24px;
+    opacity: 0;
+}
+
+.conteiner-link__link:hover  {
+    color: #7E7E82;
+}
+
+.conteiner-link__link:hover + .conteiner-link__decor-line {
+    opacity: 1;
+}
+
+/* конец костыля */
+
+.pop-up__footer {
+    margin-left: 24px;
+}
+
+.footer__footer-nav {
+    width: 152px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__mail {
+    font-family: TT Lakes-Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
