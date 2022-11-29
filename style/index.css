@@ -39,6 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 268px;
 }
 
 .nav__conteiner-link {
@@ -78,12 +79,17 @@ body {
 
 .pop-up__footer {
     margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 188px;
+    margin-bottom: 32px;
 }
 
 .footer__footer-nav {
     width: 152px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 16px;
 }
 
 .footer__mail {
@@ -92,4 +98,54 @@ body {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.footer__phone {
+    color: #1B1C21;
+    font-family: TTLakes-Bold;
+    font-weight: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6 px;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.lang-ru__input ,
+.lang-en__input ,
+.lang-ch__input {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.lang-ru__text-ru ,
+.lang-en__text-en ,
+.lang-ch__text-ch {
+    font-size: 16px;
+    font-family: TT Lakes-Medium;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.lang-ru__input:checked+.lang-ru__text-ru ,
+.lang-en__input:checked+.lang-en__text-en ,
+.lang-ch__input:checked+.lang-ch__text-ch  {
+    opacity: 0.5;
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.3;
+}
+
+a:active {
+    opacity: 0.3;
 }
