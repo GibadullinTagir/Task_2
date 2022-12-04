@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="./component/component.css">
 </head>
 <body>
+    <div class="test">
+        <button class="test__btn component_round-btn" onclick="menuview()"><img src="./img/ico/burger-menu.svg" alt="menu"></button>
+    </div>
     <div class="pop-up">
         <header class="pop-up__header">
-            <button class="header__btn component_round-btn"> <img src="./img/ico/burger.svg" alt="back"></button>
+            <button class="header__btn component_round-btn" onclick="menuHiden(),menuHiden2()"> <img src="./img/ico/burger.svg" alt="back"></button>
             <img  class="header__logo" src="./img/Group.svg" alt="cps-group-logo" width="97px" height="51px">
             <button class="header__btn component_round-btn"><img src="./img/ico/search.svg" alt="search"></button>
         </header>
@@ -74,5 +77,6 @@
             </div>
         </footer>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -144,7 +144,7 @@ button:hover {
 }
 
 button {
-    transition: all 0.5s ease-in-out;
+    transition: scale, opacity 0.5s ease-in-out;
 }
 
 button:active {
@@ -153,4 +153,44 @@ button:active {
 
 a:active {
     opacity: 0.3;
+}
+
+/* Тестовая часть ,пробую всякое */
+.pop-up {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    animation: menu-view 2s ease-out;
+}
+
+.test {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin: 18.73px 0px 0px 24px;
+}
+
+@keyframes menu-view {
+    from {
+        left: -320px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes menu-hidden {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -320px;
+    }
+}
+
+.close-menu {
+    transform: scale(0);
+    transition: transform 1s;
 }
